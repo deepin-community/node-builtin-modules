@@ -1,0 +1,42 @@
+Description: Change from ava to mocha as test runner (ava is not yet
+ available as a Debian package).
+Forwarded: not-needed
+Author: Paolo Greppi <paolo.greppi@libpf.com>
+Last-Update: 2019-01-06
+
+--- a/test.js
++++ b/test.js
+@@ -1,16 +1,22 @@
+-import test from 'ava';
+-import builtinModulesStatic from './static';
+-import builtinModules from '.';
++var assert = require('assert');
++var builtinModulesStatic = require('./static');
++var builtinModules = require('.');
+ 
+-test('main', t => {
+-	console.log('Builtin modules:', builtinModules);
++describe('main', function() {
++	it('should not throw', function() {
++		console.log('Builtin modules:', builtinModules);
+ 
+-	t.notThrows(() => {
+-		for (const x of builtinModules) {
+-			require(x);
+-		}
++		assert.doesNotThrow(() => {
++			for (const x of builtinModules) {
++				require(x);
++			}
++		});
+ 	});
+ 
+-	t.true(builtinModules.includes('fs'));
+-	t.true(Array.isArray(builtinModulesStatic));
++	it('should include fs', function() {
++		assert(builtinModules.includes('fs'));
++	});
++	it('should be an array', function() {
++		assert(Array.isArray(builtinModulesStatic));
++	});
+ });

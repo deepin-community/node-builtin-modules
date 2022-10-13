@@ -1,0 +1,42 @@
+node-builtin-modules (3.1.0-1) unstable; urgency=medium
+
+  * Team Upload.
+  * New upstream version 3.1.0
+  * Add in build command
+  * Switch to pkg-js-tools (Closes: #952358)
+  * Add upstream/metadata
+  * Drop compat, switch to debhelper compat
+  * Add "Rules-Requires-Root:no"
+  * Fix with cme
+  * Bump standards version to 4.5.0
+  * Add gbp.conf
+
+ -- Nilesh Patra <npatra974@gmail.com>  Mon, 24 Feb 2020 23:15:05 +0530
+
+node-builtin-modules (3.0.0-1) unstable; urgency=medium
+
+  * Team Upload
+  * New upstream version 3.0.0 (Closes: #918423)
+  * Port again test to mocha
+  * override_dh_auto_test-does-not-check-DEB_BUILD_OPTIONS
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 06 Jan 2019 23:31:48 +0100
+
+node-builtin-modules (2.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  * Update Vcs fields for migration to https://salsa.debian.org/
+  * Bump standard version
+  * Bump debhelper compat
+  * New upstream version
+  * Update copyright file
+  * Enable tests
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Thu, 26 Apr 2018 14:26:12 +0200
+
+node-builtin-modules (1.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #841900)
+
+ -- Sruthi Chandran <srud@disroot.org>  Tue, 25 Oct 2016 11:13:36 +0530

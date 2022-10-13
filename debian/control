@@ -1,0 +1,25 @@
+Source: node-builtin-modules
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               mocha,
+               nodejs (>= 6),
+               pkg-js-tools (>= 0.9.26~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-builtin-modules
+Vcs-Git: https://salsa.debian.org/js-team/node-builtin-modules.git
+Homepage: https://github.com/sindresorhus/builtin-modules#readme
+Rules-Requires-Root: no
+
+Package: node-builtin-modules
+Architecture: all
+Depends: ${misc:Depends},
+         nodejs
+Description: List of the Node.js builtin modules
+ List of the Node.js builtin modules. The list is just a JSON file and can be
+ used wherever.
+ .
+ Node.js is an event-based server-side JavaScript engine.
