@@ -1,3 +1,40 @@
+node-builtin-modules (3.3.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * Update module pre-list (Closes: #1045328)
+
+ -- Yadd <yadd@debian.org>  Tue, 15 Aug 2023 20:27:09 +0400
+
+node-builtin-modules (3.3.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 3.3.0
+
+ -- Yadd <yadd@debian.org>  Thu, 12 May 2022 15:36:44 +0200
+
+node-builtin-modules (3.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-builtin-modules: Add Multi-Arch: foreign.
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop nodejs dependency
+  * Mark test dependencies with <!nocheck>
+  * New upstream version 3.2.0
+
+ -- Yadd <yadd@debian.org>  Tue, 07 Dec 2021 12:52:10 +0100
+
 node-builtin-modules (3.1.0-1) unstable; urgency=medium
 
   * Team Upload.

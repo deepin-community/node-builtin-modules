@@ -1,0 +1,19 @@
+Description: update module list to fix clean
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1045328
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+Last-Update: 2023-08-15
+
+--- a/builtin-modules.json
++++ b/builtin-modules.json
+@@ -37,7 +37,6 @@
+ 	"util",
+ 	"v8",
+ 	"vm",
+-	"wasi",
+ 	"worker_threads",
+ 	"zlib"
+ ]

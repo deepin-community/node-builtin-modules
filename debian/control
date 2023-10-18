@@ -4,11 +4,11 @@ Uploaders: Sruthi Chandran <srud@disroot.org>
 Section: javascript
 Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
-Build-Depends: debhelper-compat (= 12),
-               mocha,
-               nodejs (>= 6),
-               pkg-js-tools (>= 0.9.26~)
-Standards-Version: 4.5.0
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-builtin-modules
 Vcs-Git: https://salsa.debian.org/js-team/node-builtin-modules.git
 Homepage: https://github.com/sindresorhus/builtin-modules#readme
@@ -16,8 +16,8 @@ Rules-Requires-Root: no
 
 Package: node-builtin-modules
 Architecture: all
-Depends: ${misc:Depends},
-         nodejs
+Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: List of the Node.js builtin modules
  List of the Node.js builtin modules. The list is just a JSON file and can be
  used wherever.
